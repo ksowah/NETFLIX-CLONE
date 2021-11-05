@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(78, 77, 77, 0.6);
+  border-radius: 4px;
+}
