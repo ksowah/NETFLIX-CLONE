@@ -1,0 +1,95 @@
+.animation {
+  height: fit-content;
+  width: 100%;
+  border-bottom: 8px solid #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+.animation__wrap {
+  min-height: 326px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation__change {
+  flex-direction: row-reverse;
+}
+
+.animation__text {
+  height: 174px;
+  min-width: 50%;
+  width: 50%;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+.animation__text,
+h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.animation__text,
+h2 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.animation__media {
+  width: 530px;
+  max-width: 530px;
+  height: 339px;
+}
+
+.animation__media,
+img {
+  width: 100%;
+  height: auto;
+  z-index: 5;
+  position: relative;
+}
+
+.video {
+  position: absolute;
+  left: 70px;
+  object-fit: contain;
+  max-width: 390px;
+  max-width: 430px;
+  height: 370px;
+  max-height: 370px;
+}
+
+@media (max-width: 1215px) {
+  .animation__wrap {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .animation__text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .animation__text,
+  h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 450px) {
+  .animation {
+    width: 105vw;
+  }
+}
+
+@media (max-width: 411px) {
+  .video {
+    display: none;
+  }
+}
